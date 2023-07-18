@@ -7,7 +7,7 @@ export const Hobbies = () => {
       <SectionHeader title="Hobbies" dir="l" />
       {hobbies.map((item) => (
         // Props are hidden down below | lines 18 - 24
-        <HobbiesItem key={item.title} {...item} />
+        <HobbiesItem key={item.description} {...item} />
       ))}
     </section>
   );
@@ -24,3 +24,5 @@ const hobbies = [
       ]*/
   },
 ]
+
+

@@ -1,6 +1,7 @@
 import { SectionHeader } from "@/components/utils/SectionHeader";
 import { Project } from "./Project";
 import styles from "./projects.module.scss";
+import Image from "next/image";
 
 export const Projects = () => {
   return (

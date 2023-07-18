@@ -2,40 +2,20 @@ import { Reveal } from "@/components/utils/Reveal";
 import styles from "./hobbies.module.scss";
 
 interface Props {
-  title: string;
-  position: string;
-  time: string;
-  location: string;
   description: string;
-  tech: string[];
 }
 
 export const HobbiesItem = ({
-  title,
-  position,
-  time,
-  location,
-  description,
-  tech,
+  description
 }: Props) => {
   return (
     <div className={styles.hobbies}>
       <div className={styles.heading}>
-        <Reveal>
-          <span className={styles.title}>{title}</span>
-        </Reveal>
-        <Reveal>
-          <span>{time}</span>
-        </Reveal>
+     {/* Reveal components go here */}
       </div>
 
       <div className={styles.heading}>
-        <Reveal>
-          <span className={styles.position}>{position}</span>
-        </Reveal>
-        <Reveal>
-          <span>{location}</span>
-        </Reveal>
+        {/* Reveal components go here */}
       </div>
       <Reveal>
         <p className={styles.description}>{description}</p>
