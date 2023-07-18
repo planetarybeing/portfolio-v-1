@@ -5,9 +5,9 @@ export const Hobbies = () => {
   return (
     <section className="section-wrapper" id="hobbies">
       <SectionHeader title="Hobbies" dir="l" />
-      {hobbies.map((item) => (
+      {hobbies.map((item, index) => (
         // Props are hidden down below | lines 18 - 24
-        <HobbiesItem key={item.description} {...item} />
+        <HobbiesItem key={index} description={item.description} />
       ))}
     </section>
   );
